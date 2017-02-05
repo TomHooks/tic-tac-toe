@@ -23,7 +23,7 @@ class TicTacToe {
             ||(this.array[0][1]&&this.array[0][1] === this.array[1][1]&&this.array[0][1] === this.array[2][1])
             ||(this.array[0][2]&&this.array[0][2] === this.array[1][2]&&this.array[0][2] === this.array[2][2]) )
         {this.winner = this.user;}
-        this.user = (this.xo == 'x') ? 'o' : 'x';
+        this.user = (this.user == 'x') ? 'o' : 'x';
     }
 
     isFinished() {
