@@ -1,7 +1,7 @@
 class TicTacToe {
     constructor() {
         this.array = [[],[],[]];
-        this.user = "x";
+        this.user = 'x';
         this.fields = 0;
         this.winner = null;
     }
@@ -27,6 +27,7 @@ class TicTacToe {
             ||(this.array[0][2]&&this.array[0][2] === this.array[1][2]&&this.array[0][2] === this.array[2][2])  ) {
 
             this.winner = this.user;
+            this.user = (this.user == 'x') ? 'o' : 'x';
     }
 
     isFinished() {
